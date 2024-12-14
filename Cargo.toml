@@ -1,0 +1,12 @@
+[package]
+name = "swatch"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.39"
+clap = { version = "4.5.23", features = ["cargo"] }
+env_logger = "0.11.5"
+fuser = { version = "0.15.1", features = ["macfuse-4-compat"] }
+libc = "0.2.168"
+openat = "0.1.21"
