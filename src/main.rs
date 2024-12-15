@@ -85,7 +85,7 @@ impl Filesystem for SwatchFS {
         reply: ReplyData,
     ) {
         if ino == 2 {
-            //reply.data(&HELLO_TXT_CONTENT.as_bytes()[offset as usize..]);
+            reply.data(&"".as_bytes()[offset as usize..]);
         } else {
             reply.error(ENOENT);
         }
